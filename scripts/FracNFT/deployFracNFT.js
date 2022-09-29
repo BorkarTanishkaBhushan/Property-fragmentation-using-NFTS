@@ -6,7 +6,7 @@ const main = async () => {
     console.log("Contract deployed to:", fracContract.address);
     console.log("Contract deployed by:", owner.address);
 
-    let initializeTnx = await fracContract.initialize( owner , '1', '10')
+    let initializeTnx = await fracContract.initialize( '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266', '1', '10')
     await initializeTnx.wait();
     console.log("Initialize function transaction done")
 
