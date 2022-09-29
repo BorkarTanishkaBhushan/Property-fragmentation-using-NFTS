@@ -48,4 +48,5 @@ contract FractionalizedNFT is ERC20, Ownable, ERC20Permit, ERC721Holder {
         _burn(msg.sender, _amount);
         payable(msg.sender).transfer(toRedeem);
     }
+    
 }
